@@ -1,0 +1,93 @@
+[{
+  "_id": {
+    "$oid": "67b263c8dbf543c1ff120c15"
+  },
+  "name": "Luis Guillen",
+  "email": "guillen@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$C39vS5tf88he6SPesIqX2w$akEG1W2SDRhlA2yJvPu/ttqSULjU/2zrfohUgUE79Wg",
+  "estado": false,
+  "role": "TEACHER_ROLE",
+  "cursos": [],
+  "createdAt": {
+    "$date": "2025-02-16T22:16:40.275Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T03:07:28.177Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b26ddee2022bb3db642c81"
+  },
+  "name": "Alexander Mayen Nuevo",
+  "email": "mayen@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$2vQkSatEA/i20ZnAF8+UVg$66MNcI2hgeGa3ij7uDRg3i0asl6SFyW4Qy3MvsoywLM",
+  "estado": true,
+  "role": "STUDENT_ROLE",
+  "cursos": [
+    {
+      "$oid": "67b264de77ff5c7d0a7c9cb2"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-02-16T22:59:42.271Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T02:52:22.162Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b2993dba2e45eb0d7e7ee6"
+  },
+  "name": "Matías Cahues",
+  "email": "cacahuate@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$cajkTfERCjiOLfWmW1Canw$qgNlCMxWQ5JQRUYAFm2Y8hVKKPFNNCCX7v2SUvIU2sE",
+  "estado": false,
+  "role": "STUDENT_ROLE",
+  "cursos": [],
+  "createdAt": {
+    "$date": "2025-02-17T02:04:45.736Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T02:36:40.886Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b2a103f96044897241e8fb"
+  },
+  "name": "C Pinto",
+  "email": "pinto@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$sylIIlqNvrPE2kNfxlSLJA$shW7shUNbBHYRUjWnHgh/0JOrQSp6FDKlNM7i02V9d4",
+  "estado": false,
+  "role": "STUDENT_ROLE",
+  "cursos": [],
+  "createdAt": {
+    "$date": "2025-02-17T02:37:55.330Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T02:38:22.704Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b2a68adf9caa8aa8684efe"
+  },
+  "name": "Pepe",
+  "email": "pepe@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$dD1n3CKYK2IHOYEmubViDw$Cuj2kopzIoYwdj01B6mzX1snLcbZQSClbr3uYV4hMac",
+  "estado": true,
+  "role": "STUDENT_ROLE",
+  "cursos": [
+    {
+      "$oid": "67b264de77ff5c7d0a7c9cb2"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-02-17T03:01:30.627Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-17T03:01:56.915Z"
+  }
+}]

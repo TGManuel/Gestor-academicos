@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "67b263e6dbf543c1ff120c1a"
+  },
+  "name": "Biología",
+  "description": "Cuidado del medio ambiente con Chechagod",
+  "estado": true,
+  "students": [],
+  "createdAt": {
+    "$date": "2025-02-16T22:17:10.402Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-16T22:17:10.402Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b264de77ff5c7d0a7c9cb2"
+  },
+  "name": "Inglés",
+  "description": "StandUp comedy con Marco Tulio alias 'Daddy Yankee'",
+  "estado": true,
+  "students": [],
+  "createdAt": {
+    "$date": "2025-02-16T22:21:18.607Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-16T22:21:18.607Z"
+  }
+}]

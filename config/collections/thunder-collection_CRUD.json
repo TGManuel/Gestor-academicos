@@ -1,0 +1,202 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "CRUD",
+    "collectionId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+    "dateExported": "2025-02-17T03:12:50.876Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "591d1973-5f76-478b-a53d-349e8e76fdf4",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "GET/Cursos",
+            "url": "http://localhost:3001/schoolSystem/cursos/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-02-05T03:42:55.921Z",
+            "modified": "2025-02-16T22:00:50.214Z",
+            "headers": []
+        },
+        {
+            "_id": "9e267d7c-e071-4191-841e-edd03e9a3cb9",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "SEARCH/ Cursos",
+            "url": "http://localhost:3001/schoolSystem/cursos/search/67b264de77ff5c7d0a7c9cb2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-02-05T05:36:11.082Z",
+            "modified": "2025-02-16T22:21:38.404Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyNjNjOGRiZjU0M2MxZmYxMjBjMTUiLCJpYXQiOjE3Mzk3NDQyMDYsImV4cCI6MTczOTc2MjIwNn0.mamCN0JvKQ60iNql5Iq0Zz-0uNMhxBcSG3Ic3eLpLmw"
+                },
+                {
+                    "name": "_id",
+                    "value": "67b25f0252f182a9c52216af",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "9ab47b52-82b9-448b-aa5f-7ee611db0411",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "POST/ cursos",
+            "url": "http://localhost:3001/schoolSystem/cursos/",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2025-02-15T19:58:36.361Z",
+            "modified": "2025-02-16T22:21:18.619Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyNjNjOGRiZjU0M2MxZmYxMjBjMTUiLCJpYXQiOjE3Mzk3NDQyMDYsImV4cCI6MTczOTc2MjIwNn0.mamCN0JvKQ60iNql5Iq0Zz-0uNMhxBcSG3Ic3eLpLmw"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Inglés\",\n  \"description\":\"StandUp comedy con Marco Tulio alias 'Daddy Yankee'\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7bee6d36-92fa-4211-8872-2367ae8a3157",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "GET/users",
+            "url": "http://localhost:3001/schoolSystem/users/",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2025-02-16T22:48:31.723Z",
+            "modified": "2025-02-16T22:48:53.251Z",
+            "headers": []
+        },
+        {
+            "_id": "5d05fb90-fb76-48a6-94b5-58d7b9238f89",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "GET/ Assignated Curses/ Users",
+            "url": "http://localhost:3001/schoolSystem/users/67b2a68adf9caa8aa8684efe",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2025-02-16T22:58:45.717Z",
+            "modified": "2025-02-17T03:06:16.865Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYTY4YWRmOWNhYThhYTg2ODRlZmUiLCJpYXQiOjE3Mzk3NjEyOTYsImV4cCI6MTczOTc3OTI5Nn0.xvssS56jDyUpuoqYDvKwEeI0eeLLnO1CO3o5LPAqsMU"
+                },
+                {
+                    "name": "_id",
+                    "value": "67b2a68adf9caa8aa8684efe"
+                }
+            ]
+        },
+        {
+            "_id": "9d6c5f59-dc89-4f38-9fe4-4f07e30e3b9d",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "POST/ Asignar curso/ users",
+            "url": "http://localhost:3001/schoolSystem/users/asignar-curso",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2025-02-17T00:54:48.213Z",
+            "modified": "2025-02-17T03:01:56.944Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyNjNjOGRiZjU0M2MxZmYxMjBjMTUiLCJpYXQiOjE3Mzk3NTM4MzIsImV4cCI6MTczOTc3MTgzMn0.xjtHk0-soFl4DfNkhy9b-GepOHdDG6dV3GtYlFwOWfo"
+                },
+                {
+                    "name": "_id",
+                    "value": "67b26ddee2022bb3db642c81"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"studentId\": \"67b2a68adf9caa8aa8684efe\",\n  \"cursoId\": [\"67b264de77ff5c7d0a7c9cb2\"]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "1326f7d4-4190-4879-a7bc-f82368662995",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "SEARCH/users",
+            "url": "http://localhost:3001/schoolSystem/users/search/67b2a68adf9caa8aa8684efe",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2025-02-17T01:34:55.646Z",
+            "modified": "2025-02-17T03:02:08.896Z",
+            "headers": []
+        },
+        {
+            "_id": "d871aaec-c0a7-4db2-99c0-cdc6d77e36f8",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "DELETE/users",
+            "url": "http://localhost:3001/schoolSystem/users/delete/67b2a103f96044897241e8fb",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2025-02-17T02:03:44.379Z",
+            "modified": "2025-02-17T02:38:22.738Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyNjNjOGRiZjU0M2MxZmYxMjBjMTUiLCJpYXQiOjE3Mzk3NTc5MjIsImV4cCI6MTczOTc3NTkyMn0.34bfqCUWo4FlXQns-NkfsrKC3EqeCukA3Q5uwaZGM0E"
+                },
+                {
+                    "name": "_id",
+                    "value": "67b2993dba2e45eb0d7e7ee6"
+                }
+            ]
+        },
+        {
+            "_id": "f2bf80b3-c399-4dc2-acdd-39771da8a7b2",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "UPDATE/users",
+            "url": "http://localhost:3001/schoolSystem/users/update/67b26ddee2022bb3db642c81",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2025-02-17T02:48:08.057Z",
+            "modified": "2025-02-17T02:52:22.194Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyNjNjOGRiZjU0M2MxZmYxMjBjMTUiLCJpYXQiOjE3Mzk3NjA2OTksImV4cCI6MTczOTc3ODY5OX0.eYmA0Eyodym_6r8iMlNKLZ4WHBtbHqGQq0XBAwvMsww"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Alexander Mayen Nuevo\",\n  \"email\": \"mayen@gmail.com\",\n  \"role\":\"STUDENT_ROLE\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ed11ef07-85da-4fd7-a3a5-4c9f0d6ca95c",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "DELETE/bananear de curso/user",
+            "url": "http://localhost:3001/schoolSystem/users/bananear",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2025-02-17T03:05:00.356Z",
+            "modified": "2025-02-17T03:07:28.210Z",
+            "headers": [
+                {
+                    "name": "_id",
+                    "value": "67b2a68adf9caa8aa8684efe"
+                },
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyNjNjOGRiZjU0M2MxZmYxMjBjMTUiLCJpYXQiOjE3Mzk3NjE2MzMsImV4cCI6MTczOTc3OTYzM30.XUYYqqKB-cn3lwrQXC73ETLMhhi96xqzJW5esuHVabs"
+                }
+            ]
+        }
+    ],
+    "ref": "7z6I8OSYMWSTwHnYeEtILn8H-__oz7cvzBhPE98AOaU_icrutGDMPiaum8EAEaYUV8dI-59G9j6xjD31K4pjfA"
+}
