@@ -1,2 +1,2 @@
-# School-System-CRUD
+# AcademicSystem
 CRUD for school
