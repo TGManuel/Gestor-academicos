@@ -1,78 +1,80 @@
-import User from "../users/user.model.js";
-import {generarJWT} from "../helpers/generate-jwt.js"
-import { hash,verify } from "argon2";
+import User from "../user/user.model.js";
+import { generateJWT } from "../helpers/generate-jwt.js";
+import { hash, verify } from "argon2";
 
-export const register = async(req,res)=>{
-    
+export const register = async (req, res) => {
     try {
-        const data = req.body 
+        const data = req.body; 
 
-        const encryptedPassword = await hash(data.password)
+        // Encrypt password
+        const encryptedPassword = await hash(data.password);
 
+        // Create user
         const user = await User.create({
             name: data.name,
             email: data.email,
             password: encryptedPassword,
-            role: data.role || 'STUDENT_ROLE' 
-        })
-        
-        res.status(200).json({
-            message: "Usuario creado con exito",
-            userDetails:{
-                user: user.email
-            }
-        })
+            role: data.role || "STUDENT_ROLE", // Default role if not provided
+        });
 
+        res.status(201).json({
+            message: "User successfully registered.",
+            userDetails: {
+                email: user.email,
+            },
+        });
     } catch (error) {
-        console.log(error)
+        console.error(error);
         return res.status(400).json({
-            message: "Error al registrar usuario",
-            error: error.message
-        })
+            message: "An error occurred during user registration.",
+            error: error.message,
+        });
     }
+};
 
-}
+export const login = async (req, res) => {
+    const { email, password } = req.body;
 
-export const login = async (req,res) => {
-    const {email,password} = req.body
-    
     try {
-        const user = await User.findOne({email})
+        const user = await User.findOne({ email });
 
-        
+        // Validate user existence
         if (!user) {
             return res.status(400).json({
-                message: "Usuario no registrado"
-            })
+                message: "User not found.",
+            });
         }
 
+        // Check if the user is active
         if (!user.estado) {
             return res.status(400).json({
-                message: "Usuario inactivo"
-            })
+                message: "This account is inactive.",
+            });
         }
 
-        const validPassword = await verify(user.password,password)
+        // Compare passwords
+        const validPassword = await verify(user.password, password);
         if (!validPassword) {
             return res.status(400).json({
-                message: "Contraseña incorrecta"
-            })
+                message: "Incorrect password.",
+            });
         }
-   
-        const token = await generarJWT(user.id)
-        return res.status(200).json({
-            msg: 'Usuario correcto',
-            userDetails:{
-                email: user.email,
-                token: token
-            }
-        })
 
+        // Generate authentication token
+        const token = await generateJWT(user.id);
+
+        return res.status(200).json({
+            message: "Login successful.",
+            userDetails: {
+                email: user.email,
+                token: token,
+            },
+        });
     } catch (error) {
-        console.log(error)
+        console.error(error);
         return res.status(400).json({
-            message: "Error al iniciar sesión",
-            error: error.message
-        })
+            message: "An error occurred during login.",
+            error: error.message,
+        });
     }
-}
+};

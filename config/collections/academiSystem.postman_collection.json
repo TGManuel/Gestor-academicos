@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "9488a001-7de8-4274-bb9e-d0b87aed98d4",
+		"name": "academiSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42642521"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Joj\",\r\n    \"email\":\"joj@gmail.com\",\r\n    \"password\":\"1234567\",\r\n    \"role\":\"TEACHER_ROLE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/academicSystem/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicSystem",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"joj@gmail.com\",\r\n    \"password\":\"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/academicSystem/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicSystem",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregar cursos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2Q5N2NhNzQ0NzJkZGYxZTI5YTg0ZWQiLCJpYXQiOjE3NDIzMDczNDUsImV4cCI6MTc0MjMxMDk0NX0.Jf0FBQHJDp6HXynRQW1ZjqJCIRcBwxWHImrfxGuzStY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"seminario\",\r\n    \"description\":\"solo para graduandos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/academicSystem/cursos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicSystem",
+						"cursos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cursos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2Q5N2NhNzQ0NzJkZGYxZTI5YTg0ZWQiLCJpYXQiOjE3NDIzMDczNDUsImV4cCI6MTc0MjMxMDk0NX0.Jf0FBQHJDp6HXynRQW1ZjqJCIRcBwxWHImrfxGuzStY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/academicSystem/cursos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicSystem",
+						"cursos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar cursos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2Q5N2NhNzQ0NzJkZGYxZTI5YTg0ZWQiLCJpYXQiOjE3NDI0MDc3NDUsImV4cCI6MTc0MjQyNTc0NX0.O9V5TEoo8DzL0B-ti7fUsysZeTG0pg3o-wNjSb8wExY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/academicSystem/cursos/search/67d982d8d29b52d11a81c615",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicSystem",
+						"cursos",
+						"search",
+						"67d982d8d29b52d11a81c615"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar users",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2Q5N2NhNzQ0NzJkZGYxZTI5YTg0ZWQiLCJpYXQiOjE3NDI0ODg2OTQsImV4cCI6MTc0MjUwNjY5NH0.JMgDcvN7RksBm5y6_yzCOrRO9J8pOzF2zz0ye6hZ2zQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/academicSystem/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicSystem",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bucasr users por id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2Q5N2NhNzQ0NzJkZGYxZTI5YTg0ZWQiLCJpYXQiOjE3NDIzMDczNDUsImV4cCI6MTc0MjMxMDk0NX0.Jf0FBQHJDp6HXynRQW1ZjqJCIRcBwxWHImrfxGuzStY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/academicSystem/users/search/67d97c144d01803b96ce89f0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicSystem",
+						"users",
+						"search",
+						"67d97c144d01803b96ce89f0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "asignar-curso",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2Q5N2NhNzQ0NzJkZGYxZTI5YTg0ZWQiLCJpYXQiOjE3NDI0MDc3NDUsImV4cCI6MTc0MjQyNTc0NX0.O9V5TEoo8DzL0B-ti7fUsysZeTG0pg3o-wNjSb8wExY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studentId\":\"67d97c144d01803b96ce89f0\",\r\n    \"cursoId\":\"67d982d8d29b52d11a81c615\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/academicSystem/users/asignar-curso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicSystem",
+						"users",
+						"asignar-curso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remover usuario del curso",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2Q5N2NhNzQ0NzJkZGYxZTI5YTg0ZWQiLCJpYXQiOjE3NDI0MDc3NDUsImV4cCI6MTc0MjQyNTc0NX0.O9V5TEoo8DzL0B-ti7fUsysZeTG0pg3o-wNjSb8wExY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studentId\":\"67d97c144d01803b96ce89f0\",\r\n    \"cursoId\":\"67d982d8d29b52d11a81c615\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/academicSystem/users/remove",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicSystem",
+						"users",
+						"remove"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar cursos del alumno",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2Q5N2NhNzQ0NzJkZGYxZTI5YTg0ZWQiLCJpYXQiOjE3NDI0MDc3NDUsImV4cCI6MTc0MjQyNTc0NX0.O9V5TEoo8DzL0B-ti7fUsysZeTG0pg3o-wNjSb8wExY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/academicSystem/users/67d97c144d01803b96ce89f0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicSystem",
+						"users",
+						"67d97c144d01803b96ce89f0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar alumno",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2Q5N2NhNzQ0NzJkZGYxZTI5YTg0ZWQiLCJpYXQiOjE3NDI0ODg2OTQsImV4cCI6MTc0MjUwNjY5NH0.JMgDcvN7RksBm5y6_yzCOrRO9J8pOzF2zz0ye6hZ2zQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/academicSystem/users/delete/67d97c144d01803b96ce89f0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicSystem",
+						"users",
+						"delete",
+						"67d97c144d01803b96ce89f0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar ususario",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2Q5N2NhNzQ0NzJkZGYxZTI5YTg0ZWQiLCJpYXQiOjE3NDI0ODg2OTQsImV4cCI6MTc0MjUwNjY5NH0.JMgDcvN7RksBm5y6_yzCOrRO9J8pOzF2zz0ye6hZ2zQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"BrayanJoj\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/academicSystem/users/update/67d97ca74472ddf1e29a84ed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"academicSystem",
+						"users",
+						"update",
+						"67d97ca74472ddf1e29a84ed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

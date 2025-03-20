@@ -6,7 +6,7 @@ import { dbConnection } from "./mongo.js"
 
 import authRouters from "../src/auth/auth.routers.js"
 import cursosRoutes from "../src/cursos/cursos.routes.js"
-import usersRoutes from "../src/users/user.routes.js"
+import usersRoutes from "../src/user/user.routes.js"
 
 const middlewares = (app)=>{
     app.use(express.urlencoded({extended: false})) 
@@ -17,9 +17,9 @@ const middlewares = (app)=>{
 }
 
 const routes = (app)=>{
-    app.use("/schoolSystem/auth",authRouters)
-    app.use("/schoolSystem/cursos",cursosRoutes)
-    app.use("/schoolSystem/users",usersRoutes)
+    app.use("/academicSystem/auth",authRouters)
+    app.use("/academicSystem/cursos",cursosRoutes)
+    app.use("/academicSystem/users",usersRoutes)
 }
 
 
@@ -36,7 +36,7 @@ const conectarDb = async ()=>{
 
 
 export const initServer = ()=>{
-    const app = express() 
+    const app = express()
     const port= process.env.PORT || 3001
 
     try {

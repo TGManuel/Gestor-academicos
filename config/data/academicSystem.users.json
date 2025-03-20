@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "67d97c144d01803b96ce89f0"
+  },
+  "name": "Juan",
+  "email": "juan@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$TRZT4y6AoOGWgIkOKjOneg$yDOzhPer+e4niVivSqh8k9mus0FLomVU6oRypVhXw5s",
+  "estado": false,
+  "role": "STUDENT_ROLE",
+  "cursos": [
+    {
+      "$oid": "67d982d8d29b52d11a81c615"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-03-18T13:58:44.162Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-20T16:48:34.709Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d97ca74472ddf1e29a84ed"
+  },
+  "name": "BrayanJoj",
+  "email": "joj@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$oq83sVHUaD22bzuflt9+sg$td+8pQfaLJR57U6ze+ob0MufZpxnw/FuseDQ1af0N7U",
+  "estado": true,
+  "role": "TEACHER_ROLE",
+  "cursos": [],
+  "createdAt": {
+    "$date": "2025-03-18T14:01:11.450Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-20T17:05:51.326Z"
+  }
+}]

@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "67d982d8d29b52d11a81c615"
+  },
+  "name": "Matematicas",
+  "description": "suma, resta, división y multiplicacion",
+  "estado": true,
+  "students": [],
+  "createdAt": {
+    "$date": "2025-03-18T14:27:36.230Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-19T20:50:27.609Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d982f4d29b52d11a81c618"
+  },
+  "name": "seminario",
+  "description": "solo para graduandos",
+  "estado": true,
+  "students": [],
+  "createdAt": {
+    "$date": "2025-03-18T14:28:04.403Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-18T14:28:04.403Z"
+  }
+}]
